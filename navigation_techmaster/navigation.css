@@ -1,0 +1,27 @@
+.navigation-horizontal{
+   text-align: center;
+    list-style: none;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation-horizontal li{
+    display: inline;
+}
+#navigation{
+    background-color: #007bff;
+    height: 80px;
+}
+.navigation-horizontal a{
+    color: white;
+    text-decoration: none;
+    font-family: segoe ui light;
+    font-size: 20px;
+    padding: 25px 50px 0px 0px;
+    display: inline-block; /*vừa hiểu pading vừa không xuống dòng*/
+    transition: 0.4s;
+    font-weight: bold;
+}
+.navigation-horizontal a:hover{
+    color: #c4c4c4;
+}
