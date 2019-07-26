@@ -1,0 +1,21 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    max-height: 500px;
+}
+.product{
+    display: flex;
+}
+.product img{
+    margin-left: 50px;
+}
+.detail{
+   margin: 50px 60px 60px 60px;
+   font-family: segoe ui light;
+}
+.detail pre{
+    font-family: segoe ui light;
+    padding-left: 60px;
+}
