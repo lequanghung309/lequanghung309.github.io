@@ -18,4 +18,9 @@ img{
 .detail pre{
     font-family: segoe ui light;
     padding-left: 60px;
+    color: darkgoldenrod;
+}
+button{
+    width: 600px;
+    height: 100px;
 }
