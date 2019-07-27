@@ -1,7 +1,6 @@
 .navigation-horizontal{
    text-align: center;
     list-style: none;
-    width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -9,7 +8,7 @@
     display: inline;
 }
 #navigation{
-    background-color: #007bff;
+    background-color: #3c78e8;
     height: 80px;
 }
 .navigation-horizontal a{
