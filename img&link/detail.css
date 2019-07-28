@@ -3,7 +3,7 @@ body{
     padding: 0px;
 }
 img{
-    max-height: 500px;
+    max-width: 600px;
 }
 .product{
     display: flex;

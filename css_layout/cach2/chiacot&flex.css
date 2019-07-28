@@ -1,0 +1,20 @@
+body{
+    margin: 0 auto;
+}
+.left{
+    float: left;
+    background-color: red;
+    height: 400px;
+    width: calc(100%/3);
+}
+.center{
+    float: left;
+    background-color: green;
+    width: calc(100%/3);
+    height: 400px;
+}
+.right{
+    background-color: blue;
+    width: calc(100%3);
+    height: 400px;
+}

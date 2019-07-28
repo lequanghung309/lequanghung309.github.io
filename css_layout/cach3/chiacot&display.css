@@ -1,0 +1,21 @@
+body{
+    margin: 0 auto;
+}
+#layout{
+    display: flex;
+}
+.left{
+    background-color: brown;
+    height: 400px;
+    width: calc(100% / 3) ;
+}
+.center{
+    background-color: green;
+    height: 400px;
+    width: calc(100%/3) ;
+}
+.right{
+    background-color: blue;
+    height: 400px;
+    width: calc(100%/3) ;
+}
