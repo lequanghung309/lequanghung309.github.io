@@ -1,0 +1,20 @@
+body{
+    margin: 0 auto;
+}
+#layout{
+    display: grid;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+    column-gap: 15px;
+}
+.left{
+    background-color: red;  
+    height: 400px;
+}
+.center{
+    background-color: green;  
+    height: 400px;
+}
+.right{
+    background-color: blue;
+    height: 400px;
+}
