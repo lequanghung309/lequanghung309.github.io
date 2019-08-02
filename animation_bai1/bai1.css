@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    display: flex;
+}
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #4083b2;
+    width: 250px;
+    height: 100px;
+    border-radius: 5px;
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+button:hover{
+    background:  #19a979;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: none;
+}
