@@ -1,0 +1,22 @@
+body{
+    margin: 0 auto;
+}
+
+#wrapper{
+    width: 900px;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+#wrapper h1{
+    text-align: center;
+}
+
+#wrapper img{
+    width: 100%;
+    margin: auto;
+}
+
+#wrapper h4{
+    font-size: 20px;
+}
