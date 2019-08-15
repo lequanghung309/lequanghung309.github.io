@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+  box-sizing: border-box;
+  color: #757575;
+  font-family: "Roboto";
+}
+body {
+	margin: 0;
+}
+
+/*Bỏ dấu tròn trước mỗi item*/
+ul {
+  list-style-type: none;
+  padding: 0;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+}
+
+/*Bỏ dấu gạch chân*/
+a {
+  text-decoration: none;
+  display: block;
+  padding-left: 8px;
+  line-height: 27px;
+
+}
+
+li > a > i.fas {
+  float: right;
+  line-height: 27px;
+  margin-right: 3px;
+}
+
+i.fas{
+  color: #ffffff;
+}
+
+li > a:hover {
+  background: #eceff1;
+  color: #f36d00;
+}
+
+li > a:hover .fas {
+  background: #eceff1;
+  color: #f36d00;
+}
+
+.menu-lv1, .menu-lv2, .menu-lv3 {
+  width: 200px;
+  height: 344px;
+}
+
+.menu-lv1 {
+  position: relative;
+  padding: 8px 0 12px;
+}
+
+.menu-lv1 > li {
+  font-size: 13px;
+}
+
+.menu-lv2 {
+  position: absolute;
+  left: 200px;
+  top: 0;
+  display: none;
+  padding: 8px 0 12px;
+}
+
+.menu-lv2 > li {
+  font-size: 13px;
+}
+
+.menu-lv1 > li:hover .menu-lv2 {
+  display: block;
+}
+
+.menu-lv3{
+  position: absolute;
+  left: 200px;;
+  top: 0;
+  display: none;
+  padding: 8px 0 12px;
+}
+
+.menu-lv3 > li {
+  font-size: 13px;
+  margin-left: 2px;
+}
+
+.menu-lv2 > li:hover .menu-lv3 {
+  display: block;
+}
+
+.menu-lv3 > li > a:hover{
+  background: #ffffff !important;
+}
+
+
+
+
+
+
+
+
+
