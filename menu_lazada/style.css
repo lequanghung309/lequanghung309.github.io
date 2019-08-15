@@ -34,12 +34,12 @@ i.fas{
   color: #ffffff;
 }
 
-li > a:hover {
+ul.menu-lv1 li:hover > a{
   background: #eceff1;
   color: #f36d00;
 }
 
-li > a:hover .fas {
+ul.menu-lv1 li:hover > a .fas{
   background: #eceff1;
   color: #f36d00;
 }
@@ -94,6 +94,7 @@ li > a:hover .fas {
 .menu-lv3 > li > a:hover{
   background: #ffffff !important;
 }
+
 
 
 
