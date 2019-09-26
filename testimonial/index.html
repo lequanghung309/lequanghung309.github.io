@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="testimonial-section">
+        <div class="inner-with">
+            <h1>KHÁCH HÀNG CỦA TÔI</h1>
+            <div class="testimonial-pisc">
+                <img src="https://photo-3-baomoi.zadn.vn/w300_r1x2m/18/05/02/3/25873448/15_74632.jpg" alt="test-1" class="active">
+                <img src="http://imedia.imuzik.com.vn/media2/images/song/76/a2/27/5b3041207533f.jpg" alt="test-2">
+                <img src="http://mcvietnam.net/images/product/goc/1310139826Andrea5.jpg" alt="test-3">
+                <img src="https://image.plo.vn/w800/Uploaded/2019/wcbaqlm3/6720_khanhhhjpg.jpg" alt="test-4">
+            </div>
+            <div class="testimonial-contents">
+                <div class="testimonial active" id="test-1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit omnis aliquid a ducimus officia, commodi maxime facilis explicabo assumenda repellat fugit, alias non illo harum placeat. Dolores quasi magni laudantium.</p>
+                    <span class="description"> Emy / Devloper 1</span>
+                </div>
+
+                <div class="testimonial" id="test-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit omnis aliquid a ducimus officia, commodi maxime facilis explicabo assumenda repellat fugit, alias non illo harum placeat. Dolores quasi magni laudantium.</p>
+                    <span class="description"> Emy / Devloper 2</span>
+                </div>
+
+                <div class="testimonial" id="test-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit omnis aliquid a ducimus officia, commodi maxime facilis explicabo assumenda repellat fugit, alias non illo harum placeat. Dolores quasi magni laudantium.</p>
+                    <span class="description"> Emy / Devloper 3</span>
+                </div>
+
+                <div class="testimonial" id="test-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit omnis aliquid a ducimus officia, commodi maxime facilis explicabo assumenda repellat fugit, alias non illo harum placeat. Dolores quasi magni laudantium.</p>
+                    <span class="description"> Emy / Devloper 4</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('.testimonial-pisc img').click(function() {
+            $('.testimonial-pisc img').removeClass("active");
+            $(this).addClass("active");
+
+            $(".testimonial").removeClass("active");
+            $("#" + $(this).attr("alt")).addClass("active");
+        })
+    </script>
+</body>
+
+</html>
