@@ -6,27 +6,24 @@ body{
     min-height: 100vh;
 }
 
-.wrapper-input{
-    margin-top: 50px;
-}
 .container {
     position: relative;
     width: 300px;
-    padding: 40px;
+    padding: 50px;
     background: #151515;
     opacity: 0.9;
+    font-family: sans-serif;
 }
 
-.container h1{
-    color: #fff;
-    margin-bottom: 50px;
-    text-align: center;
+.container form{
+    margin-top: 60px;
 }
 
 .input-field{
     position: relative;
     height: 40px;
     width: 100%;
+    margin-top: 50px;
 }
 
 .input-field input[type="password"],
@@ -35,7 +32,7 @@ body{
     background: transparent;
     border: none;
     box-shadow: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     width: 100%;
     outline: none;
@@ -56,10 +53,8 @@ body{
 .input-field input[type="text"]:focus + label,
 .input-field input[type="text"]:valid + label{
     transform: translateY(-35px);
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
-    background: #ff006a;
-    padding: 2px 6px;
 }
 
 .input-field span{
@@ -92,7 +87,7 @@ body{
     transform-origin: left;
     transition: transform 0.5s ease-in-out;
 }
-form .btn{
+#btn-login , #btn-registration{
     margin-top: 30px;
     width: 100%;
     border-radius: 25px;
@@ -104,7 +99,7 @@ form .btn{
     outline: none;
     cursor: pointer;
 }
-form .btn:hover{
+#btn-login:hover , #btn-registration:hover{
     color: #255784;
     background: #2196f3;
     box-shadow:  0 0 10px #2196f3,0 0 20px #2196f3,0 0 30px #2196f3;
@@ -115,10 +110,52 @@ form a{
     text-align: center;
     color:#fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
 }
 form a:hover{
     color: #00b0ff;
 }
+#bnt-form{
+   position: absolute;
+   top:0;
+   left: 0;
+   width: 400px;
+}
+#bnt-form b {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    width: 50%;
+    cursor: pointer;
+}
+#bnt-form #login{
+    float: left;
+    background-color: #555;
+    
+}
+#bnt-form #registration{
+    float: right;
+}
+#form-registration .full-name{
+    display: flex;
+    justify-content: space-between;
+}
+#form-registration .full-name div{
+    width: 45%;
+}
+#form-registration .full-name .input-field {
+    margin: 0;
+    width: 100%;
+}
+
+form i {
+    font-size: 12px;
+    color: red;
+    margin-top : 5px;
+}
+
+
 
 
