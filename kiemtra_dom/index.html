@@ -71,43 +71,49 @@
     </div>
     <script>
            const title = document.getElementsByClassName("title");
-           const content = document.getElementsByClassName("content").style.display;
+           const content = document.getElementsByClassName("content");
 
            title[0].onclick = function(){
             
-            if(content[0] === "block"){
-               content[0] = "none";
+            if(content[0].style.display === "block"){
+               content[0].style.display = "none";
             }else{
-               content[0] = "block";
-               content[3] = "none";
-              
+               content[0].style.display = "block";
+               content[1].style.display = "none";
+               content[2].style.display = "none";
+               content[3].style.display = "none";
             }
 
            }
            title[1].onclick = function(){
-            if(content[1] === "block"){
-               content[1] = "none";
+            if(content[1].style.display === "block"){
+               content[1].style.display = "none";
             }else{
-               content[1] = "block";
+               content[1].style.display = "block";
                content[0].style.display = "none";
-              
+               content[2].style.display = "none";
+               content[3].style.display = "none";
             }
            }
            title[2].onclick = function(){
-            if(content[2] === "block"){
-               content[2] = "none";
+            if(content[2].style.display === "block"){
+               content[2].style.display = "none";
             }else{
-               content[2] = "block";
-               content[1] = "none";
+               content[2].style.display = "block";
+               content[0].style.display = "none";
+               content[1].style.display = "none";
+               content[3].style.display = "none";
             }
            }
            title[3].onclick = function(){
-            if(content[3] === "block"){
+            if(content[3].style.display === "block"){
                content[3].style.display = "none";
             }else{
-               content[3] = "block";
-               content[2] = "none";
-              }
+               content[3].style.display = "block";
+               content[0].style.display = "none";
+               content[1].style.display = "none";
+               content[2].style.display = "none";
+            }
            }
     </script>
   </body>
