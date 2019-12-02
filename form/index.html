@@ -81,11 +81,7 @@
                  const bntRegistration = document.getElementById("registration");
                  const formLogin = document.getElementById("modal-login");
                  const formRegistration = document.getElementById("modal-registration");
-                 const err = document.getElementsByTagName("i");
-                 const inputArr = document.getElementsByTagName("input");
-                 const regex = /"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/;
-
-                 bntLogin.onclick = function(){
+                bntLogin.onclick = function(){
                      formLogin.style.display = "block";
                      formRegistration.style.display = "none";
                      bntLogin.style.background = "#333";
@@ -99,38 +95,6 @@
                      bntLogin.style.background = "#151515";
                      bntRegistration.style.background = "#333";
                  }
-
-                 inputArr[3].onblur = function () {
-
-                     if(inputArr[3].value.length < 6 || inputArr[3].value.length > 20 ) {
-                         err[0].textContent = "Tên tài khoản lớn hơn 6 và nhỏ hơn 20 ký tự";
-                     }else{
-                        err[0].textContent = "";
-                     }
-                 };
-
-                 inputArr[4].onblur = function() {
-                     if(inputArr[4].value < 7 ){
-                        err[1].textContent = "Mật Khẩu Tối thiểu 8 ký tự";
-                     }else{
-                        err[1].textContent = "";
-                     }
-                 };
-
-                 inputArr[5].onblur = function(){
-                     if(inputArr[5].value != inputArr[4].value){
-                         err[2].textContent = "Không khớp mật khẩu";
-                     }else{
-                        err[2].textContent = "";
-                     }
-                 }
-                 
-                document.getElementById("btn-registration").onclick = function(){
-                    if(inputArr[3].value.length > 6 && inputArr[3].value.length < 20 && inputArr[4].value.length > 7 && inputArr[5].value === inputArr[4].value){
-                        bntLogin.onclick();
-                    }
-                }
-            
           </script>
 
 </body>
